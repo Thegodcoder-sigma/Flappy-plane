@@ -103,12 +103,12 @@ def game_loop():
     obstacle_gap = 250
     obstacle_speed = 4
     plane = None
-    score = 0  # Initialize score
-    passed_obstacle = False  # To track if the plane passed an obstacle
+    score = 0 
+    passed_obstacle = False 
 
     if os.path.exists(plane_path):
         plane = pygame.image.load(plane_path).convert_alpha()
-        plane = pygame.transform.scale(plane, (50, 40))  # Resize plane to 50x40
+        plane = pygame.transform.scale(plane, (50, 40)) 
     else:
         print("Plane image not found")
 
